@@ -1,30 +1,53 @@
 <html>
-    <head>
-        <title>Learning Console</title>
-    </head>
-    <body>\
-        <h1>Open Console</h1>
-        <script>
-            var first_name="Dhruv";
-            console.log(first_name);
-
-            var last_name="N";
-            console.log(last_name);
-
-            var full_name=first_name.concat(last_name)
-            console.log(full_name);
-
-            var length_of_full_name=full_name.length;
-            console.log(length_of_full_name);
-
-            var square_root=Math.sqrt(64);
-            console.log(square_root);
-
-            var maximum_number=Math.max(65,70);
-            console.log(maximum_number);
-
-            var minimum_number=Math.min(46,56);
-            console.log(minimum_number);
-        </script>
-    </body>
+    <p>My family
+    <h4 id="head_of_family">
+    </h4>
+</p>
+<hr>
+<p>backbone of the family
+    <h4 id="backbone_of_family">
+    </h4>
+</p>
+<hr>
+<p>add a person in first
+    <h4 id="Add_A_person">
+    </h4>
+</p>
+<hr>
+<p>remove a person in first
+    <h4 id="remove_A_person">
+    </h4>
+</p>
+<hr>
+<p>add a person in last
+    <h4 id="Add_A_person_in_last">
+    </h4>
+</p>
+<hr>
+<p>Remove a person in last
+    <h4 id="Remove_A_person_in_last">
+    </h4>
+</p>
+<hr>
+<head>
+<title>My Family</title>
+</head>
+<script>
+  //head of the family?the id to be refered in inner html is head_of_family
+  var head=["naveen","preetha","Pranav"];
+  console.log(head);
+  document.getElementById(head_of_family).innerHTML=head;
+  //backbone_of_family?the id to be refered in inner html is backbone_of_family
+  var backbone=head[1];
+  console.log(backbone);
+  document.getElementById(backbone_of_family).innerHTML=backbone;
+  //add a person in first?the id to be refered in inner html is Add_A_person
+  head.unshift(Dhruv.N);
+  //remove a person in first?the id to be refered in inner html is remove_A_person
+  head.shift("");
+  //add a person in last?the id to be refered in inner html is Add_A_person_in_last
+  head.unshift("Pranav Naveen");
+  //Remove a person in last?the id to be refered in inner html is Remove_A_person_in_last
+  head.shift("");
+</script>
 </html>
